@@ -1,5 +1,5 @@
 
-public class App {	
+public class AppWeek2 extends App {
 
 	public static void main(String[] args) {
 		float itemPrice = 24.99f;
@@ -32,6 +32,46 @@ public class App {
 		System.out.println(firstName);
 		System.out.println(middleInitial);
 		System.out.println(lastName);
+		
+		
+		
+		// Week 2
+		
+		boolean isHotOutside = false;
+		boolean isWeekday = true;
+		boolean hasMoneyInPocket = true;
+		boolean shouldBuyIceCream;
+		boolean willGoSwimming;
+		boolean isAGoodDay;
+		boolean willBuyMilk;
+		
+		double costOfMilk = 9.99;
+		double moneyInWallet = 50.00;
+		int thirstLevel = 3;
+		
+		if (isHotOutside == true && hasMoneyInPocket == true) {
+			shouldBuyIceCream = true;
+		} else {
+			shouldBuyIceCream = false;
+		}
+		
+		if (isHotOutside && !isWeekday) {
+			willGoSwimming = true;
+		} else {
+			willGoSwimming = false;
+		}
+		
+		if (isHotOutside && hasMoneyInPocket && !isWeekday) {
+			isAGoodDay = true;
+		} else {
+			isAGoodDay = false;
+		}
+		
+		if (isHotOutside && thirstLevel >= 3) {
+			willBuyMilk = true;
+		} else {
+			willBuyMilk = false;
+		}
 	}
 
 }
